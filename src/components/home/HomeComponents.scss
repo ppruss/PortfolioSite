@@ -1,0 +1,51 @@
+// Hero
+.hero-banner {
+  height: 700px;
+
+  .hero-content {
+    margin-top: 100px;
+    margin-left: 50px;
+
+    h1 {
+      font-size: 5rem;
+    }
+  }
+}
+
+// Skills
+#skills {
+  width: 70%;
+  margin: auto;
+}
+
+// General
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#portrait {
+  height: 150px;
+}
+
+.contact,
+.about-me {
+  text-align: center;
+  width: 100%;
+}
+
+.contact i {
+  margin-right: 10px;
+}
+
+h2 {
+  font-size: 5rem;
+  margin-top: 200px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+h3 {
+  margin-top: 0px;
+  padding: 20px;
+}
