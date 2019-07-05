@@ -28,15 +28,15 @@ const Navbar = () => {
         </nav>
       </div>
 
-      <ul className="sidenav" id="mobile-menu">
+      <ul className="sidenav table-of-contents" id="mobile-menu">
         <li>
-          <a href="#">Home</a>
+          <a href="#hero">Home</a>
         </li>
         <li>
-          <a href="#">Skills</a>
+          <a href="#skills">Skills</a>
         </li>
         <li>
-          <a href="#">Portfolio</a>
+          <a href="#portfolio">Portfolio</a>
         </li>
         <li>
           <a href="#">Impressum</a>

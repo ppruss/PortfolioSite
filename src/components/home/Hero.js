@@ -15,7 +15,7 @@ const Hero = () => {
             Projekte von <br />
             Patrick Pruß
           </h1>
-          <a href="#" className="btn waves-effect waves-light">
+          <a href="#portfolio" className="btn waves-effect waves-light">
             <i className="material-icons left">arrow_right</i>Projekte ansehen
           </a>
         </div>

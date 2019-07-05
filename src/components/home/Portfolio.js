@@ -1,57 +1,36 @@
 import React from "react";
 import "./HomeComponents.scss";
-import GithubFinder from "../../assets/images/github_finder.jpg";
+import PortfolioItem from "./PortfolioItem";
+import GithubFinderImg from "../../assets/images/github_finder.jpg";
+import CertificateImg from "../../assets/images/cert_react.jpg";
+import ContactKeeperImg from "../../assets/images/contact_keeper.jpg";
 
 const Portfolio = () => {
   return (
-    <section id="portfolio">
+    <section id="portfolio" className="section scrollspy">
       <h2>Portfolio</h2>
-      <div className="row">
+      <div className="row flex">
         <div className="col l3 s6">
-          <div className="card teal darken-3">
-            <div className="card-image">
-              <img src={GithubFinder} alt="" />
-            </div>
-            <div className="card-content white-text">
-              <p>Udemy: React Front To Back 2019</p>
-            </div>
-            <div className="card-action">
-              <a href="https://patrickprussgithubfinder.netlify.com/">Site</a>
-              <a href="https://github.com/ppruss/GithubFinder">Github</a>
-            </div>
-          </div>
+          <PortfolioItem
+            text="GithubFinder (Udemy: React Front To Back 2019)"
+            link="https://patrickprussgithubfinder.netlify.com/"
+            image={GithubFinderImg}
+          />
         </div>
 
         <div className="col l3 s6">
-          <div className="card teal darken-3">
-            <div className="card-image">
-              <img src={GithubFinder} alt="" />
-              <span className="card-title">Github Finder</span>
-            </div>
-            <div className="card-content white-text">
-              <p>Udemy: React Front To Back 2019</p>
-            </div>
-            <div className="card-action">
-              <a href="https://patrickprussgithubfinder.netlify.com/">Site</a>
-              <a href="https://github.com/ppruss/GithubFinder">Github</a>
-            </div>
-          </div>
+          <PortfolioItem
+            text="ContactKeeper (Udemy: React Front To Back 2019)"
+            link="https://immense-hollows-58866.herokuapp.com/"
+            image={ContactKeeperImg}
+          />
         </div>
 
         <div className="col l3 s6">
-          <div className="card teal darken-3">
-            <div className="card-image">
-              <img src={GithubFinder} alt="" />
-              <span className="card-title">Github Search</span>
-            </div>
-            <div className="card-content white-text">
-              <p>Udemy: React Front To Back 2019</p>
-            </div>
-            <div className="card-action">
-              <a href="https://patrickprussgithubfinder.netlify.com/">Site</a>
-              <a href="https://github.com/ppruss/GithubFinder">Github</a>
-            </div>
-          </div>
+          <PortfolioItem
+            text="Udemy: React Front To Back 2019 Zertifikat"
+            image={CertificateImg}
+          />
         </div>
       </div>
     </section>
