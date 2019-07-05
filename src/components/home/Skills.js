@@ -1,38 +1,33 @@
 import React from "react";
 import "./HomeComponents.scss";
-import { TweenMax } from "gsap/TweenMax";
 
 const Skills = () => {
-  const animateBars = () => {
-    TweenMax.from(".determinate", 4, { width: "0%" });
-  };
-
   return (
     <section id="skills" className="section scrollspy">
       <h2>Skills</h2>
       <div className="card-panel">
-        <h4>C#</h4>
+        <h6>C#</h6>
         <div className="progress">
           <div className="determinate" style={{ width: "80%" }} />
         </div>
       </div>
 
       <div className="card-panel">
-        <h4>HTML, CSS, JavaScript</h4>
+        <h6>HTML, CSS, JavaScript</h6>
         <div className="progress">
           <div className="determinate" style={{ width: "60%" }} />
         </div>
       </div>
 
       <div className="card-panel">
-        <h4>React</h4>
+        <h6>React</h6>
         <div className="progress">
           <div className="determinate" style={{ width: "40%" }} />
         </div>
       </div>
 
       <div className="card-panel">
-        <h4>Angular 2+</h4>
+        <h6>Angular 2+</h6>
         <div className="progress">
           <div className="determinate" style={{ width: "50%" }} />
         </div>
