@@ -1,7 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./HomeComponents.scss";
 
 const Skills = () => {
+  var tl = new window.TimelineMax();
+  var controller = new window.ScrollMagic.Controller();
+
+  // Wait for DOM initialization to access elements
+  // for animation
+  useEffect(() => {
+    tl.from(".determinate", 0.5, {
+      width: "0%"
+    });
+
+    new window.ScrollMagic.Scene({
+      triggerElement: "#skills"
+    })
+      .setTween(tl)
+      .addTo(controller);
+  });
+
   return (
     <section id="skills" className="section scrollspy">
       <h2>Skills</h2>
