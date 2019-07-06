@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./HomeComponents.scss";
+import "./Skills.scss";
 
 const Skills = () => {
   var tl = new window.TimelineMax();

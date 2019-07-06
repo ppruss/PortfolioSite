@@ -1,9 +1,9 @@
 import React from "react";
-import "./HomeComponents.scss";
 import PortfolioItem from "./PortfolioItem";
 import GithubFinderImg from "../../assets/images/github_finder.jpg";
 import CertificateImg from "../../assets/images/cert_react.jpg";
 import ContactKeeperImg from "../../assets/images/contact_keeper.jpg";
+import StudySmartImg from "../../assets/images/html_sample1.jpg";
 
 const Portfolio = () => {
   return (
@@ -24,6 +24,10 @@ const Portfolio = () => {
             link="https://immense-hollows-58866.herokuapp.com/"
             image={ContactKeeperImg}
           />
+        </div>
+
+        <div className="col l3 s6">
+          <PortfolioItem text="Study Smart HTML Sample" image={StudySmartImg} />
         </div>
 
         <div className="col l3 s6">

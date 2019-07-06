@@ -1,7 +1,7 @@
 import React from "react";
-import "./HomeComponents.scss";
-import portrait from "../../assets/images/portrait.jpg";
-import heroBanner from "../../assets/images/hero.jpg";
+import "./Hero.scss";
+import portrait from "../../../assets/images/portrait.jpg";
+import heroBanner from "../../../assets/images/hero.jpg";
 
 const Hero = () => {
   return (
