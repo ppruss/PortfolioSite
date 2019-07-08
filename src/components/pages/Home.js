@@ -6,11 +6,11 @@ import Portfolio from "../home/Portfolio";
 
 const Home = () => {
   return (
-    <div>
+    <main id="home">
       <Hero />
       <Skills />
       <Portfolio />
-    </div>
+    </main>
   );
 };
 

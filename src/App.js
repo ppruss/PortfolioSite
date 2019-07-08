@@ -4,6 +4,7 @@ import "materialize-css/dist/css/materialize.min.css";
 import M from "materialize-css/dist/js/materialize.min.js";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/layout/Navbar/Navbar";
+import Footer from "./components/layout/Footer/Footer";
 
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
@@ -24,6 +25,7 @@ function App() {
             <Route exact path="/about" component={About} />
           </Switch>
         </div>
+        <Footer />
       </div>
     </Router>
   );

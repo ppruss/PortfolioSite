@@ -1,27 +1,27 @@
 import React from "react";
+import "./Navbar.scss";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  var routePrefix = window.location.pathname !== "/" ? "/" : "";
+
   return (
-    <div>
+    <header>
       <div className="navbar-fixed">
         <nav>
-          <div className="nav-wrapper teal lighten-1">
+          <div className="nav-wrapper grey darken-3">
             <a href="#" data-target="mobile-menu" className="sidenav-trigger">
               <i className="material-icons">menu</i>
             </a>
             <ul className="right hide-on-med-and-down table-of-contents">
               <li>
-                <a href="#hero">Home</a>
+                <a href={`${routePrefix}#hero`}>Home</a>
               </li>
               <li>
-                <a href="#skills">Skills</a>
+                <a href={`${routePrefix}#skills`}>Skills</a>
               </li>
               <li>
-                <a href="#portfolio">Portfolio</a>
-              </li>
-              <li>
-                <Link to="/about">Impressum</Link>
+                <a href={`${routePrefix}#portfolio`}>Portfolio</a>
               </li>
             </ul>
           </div>
@@ -30,19 +30,16 @@ const Navbar = () => {
 
       <ul className="sidenav table-of-contents" id="mobile-menu">
         <li>
-          <a href="#hero">Home</a>
+          <a href={`${routePrefix}#hero`}>Home</a>
         </li>
         <li>
-          <a href="#skills">Skills</a>
+          <a href={`${routePrefix}#skills`}>Skills</a>
         </li>
         <li>
-          <a href="#portfolio">Portfolio</a>
-        </li>
-        <li>
-          <a href="#">Impressum</a>
+          <a href={`${routePrefix}#portfolio`}>Portfolio</a>
         </li>
       </ul>
-    </div>
+    </header>
   );
 };
 

@@ -1,17 +1,19 @@
 // General
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-}
+#home {
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-h2 {
-  font-size: 5rem;
-  margin-top: 200px;
-  margin-bottom: 70px;
-  text-align: center;
-}
+  h2 {
+    font-size: 5rem;
+    margin-top: 200px;
+    margin-bottom: 70px;
+    text-align: center;
+  }
 
-h3 {
-  margin-top: 0px;
-  padding: 20px;
+  h3 {
+    margin-top: 0px;
+    padding: 20px;
+  }
 }

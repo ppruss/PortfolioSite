@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div>
+    <main>
       <h1>Impressum</h1>
       <p>
         Diese Webseite wird nicht geschäftsmäßig von mir betrieben. Ich
@@ -60,7 +60,7 @@ const About = () => {
       <p>
         Quelle: <a href="https://www.e-recht24.de">https://www.e-recht24.de</a>
       </p>
-    </div>
+    </main>
   );
 };
 
