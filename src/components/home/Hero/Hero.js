@@ -8,14 +8,17 @@ const Hero = () => {
     <div id="hero" className="row flex section scrollspy">
       <div className="col l8 s12 hero-banner parallax-container">
         <div className="parallax">
-          <img src={heroBanner} />
+          <img src={heroBanner} alt="Banner" />
         </div>
         <div className="hero-content">
           <h1>
             Projekte von <br />
             Patrick Pruß
           </h1>
-          <a href="#portfolio" className="btn-large waves-effect waves-light">
+          <a
+            href="#portfolio"
+            className="btn-large waves-effect waves-light secondary-color"
+          >
             <i className="material-icons left">arrow_right</i>Projekte ansehen
           </a>
         </div>
@@ -39,7 +42,7 @@ const Hero = () => {
             </figcaption>
           </figure>
         </div>
-        <div className="contact yellow darken-1">
+        <div className="contact primary-color">
           <h3>Kontakt</h3>
           <ul className="collection">
             <li className="collection-item">

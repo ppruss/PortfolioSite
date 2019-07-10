@@ -13,9 +13,17 @@ const Skills = () => {
     });
 
     new window.ScrollMagic.Scene({
-      triggerElement: "#skills"
+      triggerElement: ".progress",
+      duration: 500
     })
-      .setTween(tl)
+      .on("enter leave", function(e) {
+        if (e.type === "enter") {
+          tl.play();
+          console.log("enter");
+        } else {
+          tl.reverse();
+        }
+      })
       .addTo(controller);
   });
 
@@ -24,29 +32,41 @@ const Skills = () => {
       <h2>Skills</h2>
       <div className="card-panel">
         <h6>C#</h6>
-        <div className="progress">
-          <div className="determinate" style={{ width: "80%" }} />
+        <div className="progress grey lighten-3">
+          <div
+            className="determinate secondary-color"
+            style={{ width: "80%" }}
+          />
         </div>
       </div>
 
       <div className="card-panel">
         <h6>HTML, CSS, JavaScript</h6>
-        <div className="progress">
-          <div className="determinate" style={{ width: "60%" }} />
+        <div className="progress grey lighten-3">
+          <div
+            className="determinate secondary-color"
+            style={{ width: "60%" }}
+          />
         </div>
       </div>
 
       <div className="card-panel">
         <h6>React</h6>
-        <div className="progress">
-          <div className="determinate" style={{ width: "40%" }} />
+        <div className="progress grey lighten-3">
+          <div
+            className="determinate secondary-color"
+            style={{ width: "40%" }}
+          />
         </div>
       </div>
 
       <div className="card-panel">
         <h6>Angular 2+</h6>
-        <div className="progress">
-          <div className="determinate" style={{ width: "50%" }} />
+        <div className="progress grey lighten-3">
+          <div
+            className="determinate secondary-color"
+            style={{ width: "50%" }}
+          />
         </div>
       </div>
     </section>

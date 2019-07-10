@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.scss";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const Navbar = () => {
   var routePrefix = window.location.pathname !== "/" ? "/" : "";
@@ -10,6 +10,7 @@ const Navbar = () => {
       <div className="navbar-fixed">
         <nav>
           <div className="nav-wrapper grey darken-3">
+            {/* eslint-disable-next-line */}
             <a href="#" data-target="mobile-menu" className="sidenav-trigger">
               <i className="material-icons">menu</i>
             </a>
