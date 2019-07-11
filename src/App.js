@@ -3,9 +3,9 @@ import "./App.css";
 import "materialize-css/dist/css/materialize.min.css";
 import M from "materialize-css/dist/js/materialize.min.js";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Navbar from "./components/layout/Navbar/Navbar";
 import Footer from "./components/layout/Footer/Footer";
 
+import Navbar from "./components/layout/Navbar/Navbar";
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 

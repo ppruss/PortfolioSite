@@ -13,17 +13,9 @@ const Skills = () => {
     });
 
     new window.ScrollMagic.Scene({
-      triggerElement: ".progress",
-      duration: 500
+      triggerElement: "#skills"
     })
-      .on("enter leave", function(e) {
-        if (e.type === "enter") {
-          tl.play();
-          console.log("enter");
-        } else {
-          tl.reverse();
-        }
-      })
+      .setTween(tl)
       .addTo(controller);
   });
 
