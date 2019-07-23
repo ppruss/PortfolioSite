@@ -27,7 +27,7 @@ const Skills = () => {
         <div className="progress grey lighten-3">
           <div
             className="determinate secondary-color"
-            style={{ width: "80%" }}
+            style={{ width: "90%" }}
           />
         </div>
       </div>
@@ -37,7 +37,7 @@ const Skills = () => {
         <div className="progress grey lighten-3">
           <div
             className="determinate secondary-color"
-            style={{ width: "60%" }}
+            style={{ width: "70%" }}
           />
         </div>
       </div>
@@ -47,7 +47,7 @@ const Skills = () => {
         <div className="progress grey lighten-3">
           <div
             className="determinate secondary-color"
-            style={{ width: "40%" }}
+            style={{ width: "45%" }}
           />
         </div>
       </div>
@@ -57,7 +57,17 @@ const Skills = () => {
         <div className="progress grey lighten-3">
           <div
             className="determinate secondary-color"
-            style={{ width: "50%" }}
+            style={{ width: "55%" }}
+          />
+        </div>
+      </div>
+
+      <div className="card-panel">
+        <h6>WinForms, WPF</h6>
+        <div className="progress grey lighten-3">
+          <div
+            className="determinate secondary-color"
+            style={{ width: "80%" }}
           />
         </div>
       </div>

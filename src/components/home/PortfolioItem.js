@@ -6,15 +6,15 @@ const PortfolioItem = ({ image, text, link }) => {
   return (
     <div className="card secondary-color">
       <div className="card-image">
-        <img src={image} alt="" />
+        <img src={image} alt="" class="materialboxed" />
       </div>
       <div className="card-content white-text">
         <p>{text}</p>
       </div>
       <div className="card-action">
         {link && (
-          <a href={link} className="primary-text">
-            Site
+          <a href={link} className="secondary-text">
+            Link To Page
           </a>
         )}
       </div>

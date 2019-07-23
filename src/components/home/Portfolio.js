@@ -4,6 +4,9 @@ import GithubFinderImg from "../../assets/images/github_finder.jpg";
 import CertificateImg from "../../assets/images/cert_react.jpg";
 import ContactKeeperImg from "../../assets/images/contact_keeper.jpg";
 import StudySmartImg from "../../assets/images/html_sample1.jpg";
+import DreamCompanyImg from "../../assets/images/html_sample2.jpg";
+
+import "./Portfolio.scss";
 
 const Portfolio = () => {
   return (
@@ -34,6 +37,13 @@ const Portfolio = () => {
           <PortfolioItem
             text="Udemy: React Front To Back 2019 Zertifikat"
             image={CertificateImg}
+          />
+        </div>
+
+        <div className="col l3 s6">
+          <PortfolioItem
+            text="Dream Company HTML Sample"
+            image={DreamCompanyImg}
           />
         </div>
       </div>
