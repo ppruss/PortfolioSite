@@ -6,7 +6,7 @@ const PortfolioItem = ({ image, text, link }) => {
   return (
     <div className="card secondary-color">
       <div className="card-image">
-        <img src={image} alt="" class="materialboxed" />
+        <img src={image} alt="" className="materialboxed" />
       </div>
       <div className="card-content white-text">
         <p>{text}</p>
